@@ -62,6 +62,7 @@ article h3 {}
 /* selectores de clase */
 
 .background {
+    background-color: #466173
     background-image: url("../imagenes/background.png");
     background-size: cover;
 }
