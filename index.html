@@ -48,19 +48,23 @@
     <section id="guitarras" class="guitarras contenedor">
       <!--guitarras-->
       <h2>Nuestras guitarras:</h2>
-      <div class="videocont">
-        <iframe
-          class="videocontsrc"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/R1dW8M4EqYY"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div class="videodemo-cont">
+        <div class="videodemo">
+          <div class="videocont ">
+            <iframe
+            class="videocontsrc"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/R1dW8M4EqYY"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
-      <!--titulo-->
-      <article class="guitarra">
+        <!--titulo-->
+        <article class="guitarra">
         <!--guitarra1-->
         <img
           class="derecha"
@@ -232,7 +236,7 @@
       var $body = document.body;
 
       var gestos = new Hammer($body);
-      gestos.on('swipeleft', hideMenu);
+      gestos.on('swipeleft', hideMenubgwebr);
       gestos.on('swiperight', showMenu);
     </script>
   </body>

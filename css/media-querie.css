@@ -1,13 +1,13 @@
 @media screen and (max-width: 800px) {
     /* precios */
-        .tabla .contenedor {
-            overflow: auto;
-            padding: 
-        }
-        .tabla {
-            margin: 50px 20px;
-            border: 1px solid #273b47;
-        }
+    .tabla .contenedor {
+        overflow: auto;
+        padding:
+    }
+    .tabla {
+        margin: 50px 20px;
+        border: 1px solid #273b47;
+    }
     /* portada */
     .titulo {
         font-size: 45px;
@@ -27,6 +27,9 @@
         justify-content: center;
     }
     /* guitarras */
+    .videodemo {
+        margin: 0 auto 50px;
+    }
     .guitarras {
         text-align: center;
     }
@@ -90,6 +93,9 @@
     .col1 label {
         margin-bottom: 4px;
     }
+    .videodemo {
+        margin: 0 10px 40px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -109,10 +115,32 @@
     .menu ul {
         padding: 0;
     }
+    .videodemo {
+        margin: 0 10px 30px;
+    }
+
+    .col2 {
+        align-items: stretch;
+    }
 }
 
 @media screen and (max-width: 500px) {
     /* portada */
+    .precios .header .logotipo {
+        margin: 50px 0;
+    }
+    .portada .button {
+        display: block;
+        align-items: stretch;
+    }
+
+    .col2 {
+        align-items: stretch;
+    }
+
+    .burger-button {
+        display: inline-block;
+    }
     .portada .contenedor {
         position: static;
     }
@@ -125,23 +153,19 @@
     .menu ul {
         flex: 1;
     }
-
     .portada {
         text-align: center;
     }
-
     .titulo {
-        font-size: 30px;
+        font-size: 26px;
         padding: 8px;
     }
-
     .titulo-a {
-        font-size: 16px;
+        font-size: 12px;
     }
-
     .menu {
         background: rgba(255, 60, 88, 0.8);
-        position: absolute;
+        position: fixed;
         left: -100%;
         top: 0;
         z-index: 2;
@@ -152,51 +176,33 @@
         align-items: center;
         transition: 300ms;
     }
-
     .menu.active {
         left: 0;
     }
-
-    .burger-button {
-        color: white;
-        width: 40px;
-        line-height: 40px;
-        height: 40px;
-        display: inline-block;
-        text-align: center;
-        cursor: pointer;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        z-index: 3;
-    }
-
     .menu li {
         display: block;
         margin: 0;
         padding: 10px 0 10px 0;
         border-bottom: 2px solid white;
     }
-
     .menu li:first-child {
         border-top: 2px solid white;
     }
-
     .menu li:before {
         display: none;
     }
-
-
     /* guitarras */
-
+    .videodemo {
+        margin: 0 10px 30px;
+    }
     .guitarra img {
         width: 250px;
     }
-
     .title-b {
         font-size: 30px;
     }
 }
+
 
 /* @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .background {
