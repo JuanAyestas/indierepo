@@ -118,7 +118,6 @@
     .videodemo {
         margin: 0 10px 30px;
     }
-
     .col2 {
         align-items: stretch;
     }
@@ -133,11 +132,9 @@
         display: block;
         align-items: stretch;
     }
-
     .col2 {
         align-items: stretch;
     }
-
     .burger-button {
         display: inline-block;
     }
@@ -209,3 +206,9 @@
         background-image: url("../imagenes/background2x.png");
     }
 } */
+
+
+}
+
+}
+*/
