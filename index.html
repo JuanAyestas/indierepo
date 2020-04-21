@@ -6,8 +6,8 @@
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/invie.css" />
-    <link rel="stylesheet" href="fonts/icomoon/style.css"/>
-    <meta name="viewport" content ="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css" />
 </head>
 
@@ -48,12 +48,23 @@
     <section id="guitarras" class="guitarras contenedor">
       <!--guitarras-->
       <h2>Nuestras guitarras:</h2>
+      <div class="videocont">
+        <iframe
+          class="videocontsrc"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/R1dW8M4EqYY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <!--titulo-->
       <article class="guitarra">
         <!--guitarra1-->
         <img
           class="derecha"
-          src="imagenes/invie-acustica.png"
+          data-src="imagenes/invie-acustica.png"
           width="350"
           alt="Guitarra Invie Acustica"
         />
@@ -70,7 +81,7 @@
         <!--guitarra2-->
         <img
           class="izquierda"
-          src="imagenes/invie-classic.png"
+          data-src="imagenes/invie-classic.png"
           width="400"
           alt="Guitarra Invie Classic"
         />
@@ -87,7 +98,10 @@
     <footer class="footer">
       <div class="contenedor">
         <div class="contacto">
-          <img src="imagenes/invie-white.png" alt="logotipo blanco" /><!--img-->
+          <img
+            data-src="imagenes/invie-white.png"
+            alt="logotipo blanco"
+          /><!--img-->
           <a href="tel:+57302456678"
             ><strong>Telefono</strong><span>302456678</span></a
           >
@@ -183,27 +197,31 @@
         </form>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
     <script>
-      var consulta = window.matchMedia('(max-width: 500px)');
+      var consulta = window.matchMedia("(max-width: 500px)");
       consulta.addListener(mediaQuery);
 
-      var $burgerButton = document.getElementById('burger-button');
-      var $menu = document.getElementById('menu');
-      function toggleMenu(){
-        $menu.classList.toggle('active')
-      };
-      
+      var $burgerButton = document.getElementById("burger-button");
+      var $menu = document.getElementById("menu");
+      function toggleMenu() {
+        $menu.classList.toggle("active");
+      }
+
       function mediaQuery() {
         if (consulta.matches) {
-          console.log('se cumplió');
-          $burgerButton.addEventListener('touchstart', toggleMenu); 
-        }
-        else {
-          console.log('no se cumplió');
-          $burgerButton.removeEventListener('touchstart', toggleMenu);
+          console.log("se cumplió");
+          $burgerButton.addEventListener("touchstart", toggleMenu);
+        } else {
+          console.log("no se cumplió");
+          $burgerButton.removeEventListener("touchstart", toggleMenu);
         }
       }
       mediaQuery();
+      // lazy loading
+      var bLazy = new Blazy({
+        selector: "img",
+      });
     </script>
   </body>
 </html>
