@@ -50,21 +50,21 @@
       <h2>Nuestras guitarras:</h2>
       <div class="videodemo-cont">
         <div class="videodemo">
-          <div class="videocont ">
+          <div class="videocont">
             <iframe
-            class="videocontsrc"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/R1dW8M4EqYY"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+              class="videocontsrc"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/R1dW8M4EqYY"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
             ></iframe>
           </div>
         </div>
       </div>
-        <!--titulo-->
-        <article class="guitarra">
+      <!--titulo-->
+      <article class="guitarra">
         <!--guitarra1-->
         <img
           class="derecha"
@@ -215,7 +215,7 @@
       function showMenu() {
         $menu.classList.add("active");
       }
-      function hideMenu(){
+      function hideMenu() {
         $menu.classList.remove("active");
       }
       function mediaQuery() {
@@ -236,8 +236,8 @@
       var $body = document.body;
 
       var gestos = new Hammer($body);
-      gestos.on('swipeleft', hideMenubgwebr);
-      gestos.on('swiperight', showMenu);
+      gestos.on("swipeleft", hideMenubgwebr);
+      gestos.on("swiperight", showMenu);
     </script>
   </body>
 </html>
