@@ -5,8 +5,251 @@
     <title>Invie - Tus mejores guitarras!</title>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-
-    <style></style>
+    <style>
+        body {
+            font-family: "Allerta", sans-serif;
+            margin: 0;
+        }
+        
+        .background {
+            background-color: #466173;
+            background-image: url(./imagenes/background.png);
+            background-size: cover;
+        }
+        
+        .button {
+            border: none;
+            border-radius: 12px;
+            color: #fff;
+            padding: 7px 12px;
+            text-decoration: none;
+            font-size: 18px;
+            background: #fe344e;
+            background: -moz-linear-gradient(top, #fe344e 0%, #ff7250 100%);
+            background: -webkit-linear-gradient(top, #fe344e 0%, #ff7250 100%);
+            background: linear-gradient(to bottom, #fe344e 0%, #ff7250 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fe344e', endColorstr='#ff7250', GradientType=0);
+        }
+        
+        .header {
+            position: relative;
+        }
+        
+        .titulo {
+            font-family: "Montserrat", sans-serif;
+            font-size: 70px;
+            margin-top: 70px;
+            margin-bottom: 0;
+        }
+        
+        .titulo span {
+            text-decoration: underline;
+        }
+        
+        .title-a {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        
+        .contenedor {
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+        }
+        
+        .guitarras {
+            color: #1f313c;
+            margin-bottom: 60px;
+        }
+        
+        .guitarras h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 35px;
+        }
+        
+        .portada {
+            color: #fff;
+            height: 500px;
+            padding: 20px;
+        }
+        
+        .menu {
+            font-size: 24px;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+        
+        .menu li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+        
+        .menu li:before {
+            content: "∘";
+            font-size: 30px;
+            line-height: 20px;
+            color: #fff;
+        }
+        
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .logotipo {
+            display: inline-block;
+            margin-left: 0;
+        }
+        
+        .videocont {
+            position: relative;
+            padding-top: 56.25%;
+        }
+        
+        .videodemo {
+            margin: 0 auto 80px;
+            max-width: 500px;
+            width: 100%;
+            border: 5px solid #3c5b6e;
+        }
+        
+        .videodemo-cont {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .videocontsrc {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .burger-button {
+            color: #fff;
+            width: 40px;
+            line-height: 40px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            z-index: 3;
+            display: none;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .titulo {
+                font-size: 45px;
+                margin-top: 30px;
+                text-align: center;
+            }
+            .title-a {
+                font-size: 18px;
+                text-align: center;
+            }
+            .portada {
+                height: auto;
+            }
+            .portada .button {
+                display: inline-block;
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+            .videodemo {
+                margin: 0 auto 50px;
+            }
+            .guitarras {
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            .videodemo {
+                margin: 0 10px 40px;
+            }
+        }
+        
+        @media screen and (max-width: 650px) {
+            header {
+                text-align: center;
+            }
+            .logotipo {
+                margin: 0;
+            }
+            .menu {
+                position: static;
+                display: block;
+            }
+            .menu li:first-child {
+                margin: 0;
+            }
+            .menu ul {
+                padding: 0;
+            }
+            .videodemo {
+                margin: 0 10px 30px;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .portada .button {
+                display: block;
+                align-items: stretch;
+            }
+            .burger-button {
+                display: inline-block;
+            }
+            .portada .contenedor {
+                position: static;
+            }
+            .header {
+                position: static;
+            }
+            .menu ul {
+                flex: 1;
+            }
+            .portada {
+                text-align: center;
+            }
+            .titulo {
+                font-size: 26px;
+                padding: 8px;
+            }
+            .menu {
+                background: rgba(255, 60, 88, 0.8);
+                position: fixed;
+                left: -100%;
+                top: 0;
+                z-index: 2;
+                bottom: 0;
+                right: 0;
+                display: flex;
+                width: 100%;
+                align-items: center;
+            }
+            .menu li {
+                display: block;
+                margin: 0;
+                padding: 10px 0;
+                border-bottom: 2px solid #fff;
+            }
+            .menu li:first-child {
+                border-top: 2px solid #fff;
+            }
+            .menu li:before {
+                display: none;
+            }
+            .videodemo {
+                margin: 0 10px 30px;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="fonts/icomoon/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 </head>
