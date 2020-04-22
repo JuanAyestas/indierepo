@@ -345,11 +345,22 @@ th {
     }
     .contacto {
         margin: 0 auto;
+        display: block;
+    }
+    .contacto a {
+        margin: 10px 0 10px 0;
+        display: block;
+    }
+    .sexo label {
+        display: block;
     }
     .formulario {
         display: block;
         margin: 0 auto;
         width: 300px;
+    }
+    .formulario label {
+        font-size: 20px;
     }
     .col1 {
         margin: 0;
@@ -357,13 +368,17 @@ th {
     .col2 {
         margin: 0;
     }
+    input[type="text"] {
+        margin-bottom: 20px;
+    }
     input[type="text"],
     input[type="email"] {
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: 20px;
         padding: 5px;
     }
     .intereses label {
-        font-size: 16px;
+        font-size: 20px;
         display: block;
     }
     input[type="radio"],
